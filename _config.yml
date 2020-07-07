@@ -8,7 +8,6 @@ twitter_username: PublishPresscom
 github_username:  publishpress
 header_pages:
   - developing.md
-  - standards.md
   - deploying.md
 
 # Build settings
