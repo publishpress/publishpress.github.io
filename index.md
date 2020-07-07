@@ -1,6 +1,7 @@
 ---
-layout: default
-title: Documentation for PublishPress developers
+layout: home
+title: Home
+nav_order: 1
 ---
 # Documentation for PublishPress developers
 
