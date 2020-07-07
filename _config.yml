@@ -4,8 +4,6 @@ description: >-
   Development documentation for PublishPress.com.
 baseurl: ""
 url: "https://publishpress.github.io"
-twitter_username: PublishPresscom
-github_username:  publishpress
 
 # Build settings
 remote_theme: pmarsceill/just-the-docs
