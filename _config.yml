@@ -6,12 +6,9 @@ baseurl: ""
 url: "https://publishpress.github.io"
 twitter_username: PublishPresscom
 github_username:  publishpress
-header_pages:
-  - developing.md
-  - deploying.md
 
 # Build settings
-theme: minima
+theme: just-the-docs
 plugins:
   - jekyll-feed
 
