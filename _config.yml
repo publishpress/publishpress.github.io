@@ -9,8 +9,23 @@ github_username:  publishpress
 
 # Build settings
 theme: just-the-docs
+remote_theme: pmarsceill/just-the-docs
+
 plugins:
   - jekyll-feed
+
+search:
+  button: true
+
+color_scheme: publishpress
+
+footer_content: "Copyright &copy; 2020 PublishPress. License <a href=\"https://www.gnu.org/licenses/gpl-3.0.html\">GPL v3.</a>"
+last_edit_timestamp: true
+gh_edit_link: true
+gh_edit_link_text: "Edit this page on GitHub."
+gh_edit_repository: "https://github.com/publishpress/publishpress.github.io"
+gh_edit_branch: "master"
+#ga_tracking: UA-5555555-55
 
 # Exclude from processing.
 # The following items will not be processed, by default.
