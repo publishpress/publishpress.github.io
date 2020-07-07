@@ -34,3 +34,12 @@ Load the project directory in the terminal and run:
 ```shell script
 $ bundle update
 ```
+
+## How to update the search data
+
+The theme "Just the Docs" provide a search field which looks for the site data on a JSON file.
+Use the following command to udpate the search data after changing any content.
+
+```shell script
+$ bundle exec just-the-docs rake search:init
+```
