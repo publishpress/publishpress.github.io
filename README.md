@@ -43,3 +43,7 @@ Use the following command to udpate the search data after changing any content.
 ```shell script
 $ bundle exec just-the-docs rake search:init
 ```
+
+## How to update the live site
+
+You just need to commit the changes to the `master` branch. Github will detect the push event and will update the site in a few minutes.
