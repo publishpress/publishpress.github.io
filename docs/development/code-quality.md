@@ -119,9 +119,11 @@ For checking all the source folder you just need to run:
 $ composer mess-check
 ```
 
-## Copy detector
+## DRY - Don't repeat yourself
 
-We use [PHP Copy/Paste Detector (PHPCPD)](https://github.com/sebastianbergmann/phpcpd)
+The DRY principle aim to reduce code duplication. Duplicated code can lead to a poor refactoring and poor maintenance.
+
+In order to detect copied, or repeated code, we use [PHP Copy/Paste Detector (PHPCPD)](https://github.com/sebastianbergmann/phpcpd).
 
 ### Installing PHPCPD
 
