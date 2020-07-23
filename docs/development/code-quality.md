@@ -103,8 +103,6 @@ You can use the tool running:
 $ vendor/bin/phpmd ./src ansi phpmd-ruleset.xml
 ```
 
-You can 
-
 ### Composer script
 
 For convenience, you can create a composer script:
@@ -119,4 +117,40 @@ For checking all the source folder you just need to run:
 
 ```
 $ composer mess-check
+```
+
+## Copy detector
+
+We use [PHP Copy/Paste Detector (PHPCPD)](https://github.com/sebastianbergmann/phpcpd)
+
+### Installing PHPCPD
+
+You can install as a composer dev requirement
+ 
+```
+$ composer require --dev sebastian/phpcpd
+```
+
+### Checking the code
+
+You can use the tool running:
+
+```
+$ vendor/bin/phpcpd ./src
+```
+
+### Composer script
+
+For convenience, you can create a composer script:
+
+```
+"scripts": {
+    "copy-check": "vendor/bin/phpcpd ./src"
+}
+```
+
+For checking all the source folder you just need to run:
+
+```
+$ composer copy-check
 ```
