@@ -2,3 +2,42 @@ $purple-000: #655997 !default;
 $purple-100: #544984 !default;
 $purple-200: #453495 !default;
 $purple-300: #291d5a !default;
+
+.side-bar {
+  padding-top: 10px;
+}
+
+.bg-publishpress-purple,
+.bg-publishpress-yellow {
+  width: 300px;
+  height: 140px;
+  display: inline-block;
+  margin-right: 10px;
+  padding: 20px;
+
+  div.color-title {
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+}
+
+.bg-publishpress-purple {
+  background: #655997;
+  color: #ffffff;
+}
+
+.bg-publishpress-yellow {
+  background: #FEB123;
+}
+
+.logo-wrapper {
+  border: 1px solid silver;
+  background-image: url("/assets/img/transparent-bg.jpg");
+  background-repeat: repeat;
+}
+
+.slogan {
+  padding: 10px;
+  font-size: 20px;
+  background-color: #eaeaea;
+}

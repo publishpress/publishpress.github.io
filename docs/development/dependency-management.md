@@ -18,4 +18,4 @@ parent: Development
 
 ## PHP Dependencies
 
-We use [Composer](https://getcomposer.org/) as dependency manager for any 3rd party library or even the [Free plugin in the Pro plugin](/docs/deployment/free-pro).
+We use [Composer](https://getcomposer.org/) as dependency manager for any 3rd party library or even the [Free plugin in the Pro plugin]({% link docs/free-pro.md %}).

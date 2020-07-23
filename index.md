@@ -13,9 +13,8 @@ It is important to note that this is a project in progress, and we are constantl
 
 ## Consistency!
 
-That is the goal. The most important principle we are pursuing as a team.
+That is the goal, from the code to the processes. The most important principle we are pursuing as a team.
 
 ## Who we are
 
 Hello, we are the [PublishPress](https://publishpress.com) team. We create Professional Publishing Plugins for WordPress, and [we love Penguins](https://publishpress.com/brand/)!
-
