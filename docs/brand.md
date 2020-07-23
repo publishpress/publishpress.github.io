@@ -2,7 +2,7 @@
 layout: default
 title: Brand - Logo and Colors
 permalink: /docs/brand/
-nav_order: 4
+nav_order: 5
 ---
 
 # Brand - Logo and Colors
