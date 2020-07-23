@@ -47,3 +47,5 @@ $ bundle exec just-the-docs rake search:init
 ## How to update the live site
 
 You just need to commit the changes to the `master` branch. Github will detect the push event and will update the site in a few minutes.
+
+The site is live at [https://publishpress.github.io](https://publishpress.github.io)
