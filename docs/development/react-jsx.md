@@ -1,7 +1,7 @@
 ---
 layout: page
 title: React JS and JSX Files
-permalink: /docs/deployment/react-jsx
+permalink: /docs/development/react-jsx
 nav_order: 6
 parent: Development
 ---
