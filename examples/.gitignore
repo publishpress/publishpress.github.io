@@ -1,0 +1,26 @@
+# OS generated files #
+######################
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Ignores the "dev" files
+vendor/
+packages/
+dist/
+node_modules/
+.idea/
+.env.testing
+builder.yml
+*.sublime-project
+*.sublime-workspace
+codeception.yml
+.svn
+.git
+wpcom-helper.php
+local.sh
+.properties.ini
