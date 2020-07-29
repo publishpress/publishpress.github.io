@@ -34,13 +34,13 @@ The project's repository is [publishpress/PublishPress-Plugin-Builder](https://g
 
 You can install the builder scripts running the following command:
 
-```
+```bash
 $ composer require --dev publishpress/publishpress-plugin-builder
 ```
 
 Create a new file in the project's root dir: `RoboFile.php`:
 
-```
+```php
 <?php
 
 /**
@@ -60,7 +60,7 @@ You can check the full [list of files that will be removed](https://github.com/p
 
 For adding more files to that list, feel free to submit a Pull Request updating that file or customizing your Robo script using the method `appendToFileToIgnore`:
 
-```
+```php
 <?php
 
 /**
@@ -100,7 +100,7 @@ If you want, you can choose a different location for the final package, so you c
 
 For setting a custom destination dir, you can create a YAML file `builder.yml` in the project's root dir:
 
-```
+```yaml
 destination: "/Users/developer/Dropbox/Tmp-Packages/"
 ```
 
@@ -108,7 +108,7 @@ destination: "/Users/developer/Dropbox/Tmp-Packages/"
 
 For creating a .zip package you just need to run the following command:
 
-```
+```bash
 $ vendor/bin/robo build
 ```
 
@@ -116,7 +116,7 @@ $ vendor/bin/robo build
 
 Sometimes you want to build the final code to a directory instead of to a zip file. If that is the case you can run the following command:
 
-```
+```bash
 $ vendor/bin/robo build:unpacked
 ``` 
 
@@ -125,16 +125,18 @@ $ vendor/bin/robo build:unpacked
 For convenience, you can add the build commands to composer as a script. That makes the command shorter and easier to run.
 
 Edit your `composer.json` file:
-```
-"scripts": {
-    "build": "vendor/bin/robo build --ansi",
-    "build-unpacked": "vendor/bin/robo build:unpacked --ansi"
+```json
+{
+    "scripts": {
+        "build": "vendor/bin/robo build --ansi",
+        "build-unpacked": "vendor/bin/robo build:unpacked --ansi"
+    }
 }
 ```
 
 Then you can just run:
 
-```
+```bash
 $ composer build
 $ composer build-unpacked
 ```

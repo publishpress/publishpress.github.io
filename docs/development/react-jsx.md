@@ -35,7 +35,7 @@ Please, read the [React JS documentation](https://reactjs.org/docs/introducing-j
 
 Create a `package.json` file adding the following content:
  
-```
+```json
 {
   "name": "my-plugin",
   "version": "1.0.0",
@@ -81,7 +81,7 @@ Sometimes npm requires to run additional commands like `npm fund` or `npm audit 
 
 Create a file `webpack.confi.js` with the following content:
 
-```
+```js
 const NODE_ENV = process.env.NODE_ENV || 'development';
 
 let path = require('path');
@@ -115,7 +115,7 @@ Add the .jsx files you want to compile and merge in the `entry` attribute.
 
 Considering you added the specific scripts entry to the `package.json` file you can run the commands:
 
-```
+```bash
 $ npm run build
 ```
 
@@ -128,7 +128,7 @@ You can enqueue the minimized JS file (added to `assets/js` folder by default).
 The build command should be ran after every change to the JSX file otherwise the changes won't be added to the JS file.
 So to avoid calling that command every time you can use the webpack's `--watch` parameter running:
 
-```
+```bash
 $ npm run watch
 ```  
 

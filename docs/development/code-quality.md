@@ -27,7 +27,7 @@ Most IDEs or code editors support automatic check for the code style run.
 
 You can install it as a composer dev requirement:
 
-```
+```bash
 $ composer require --dev squizlabs/php_codesniffer
 ```
 
@@ -37,7 +37,7 @@ For checking the code style we use [PHP CodeSniffer](https://github.com/squizlab
 
 You can check the code style running: 
 
-```
+```bash
 $ vendor/bin/phpcs --standard=PSR12 ./src-dir any-other-file.php --colors
 ```
 
@@ -45,7 +45,7 @@ $ vendor/bin/phpcs --standard=PSR12 ./src-dir any-other-file.php --colors
 
 For convenience, add a composer script to your `composer.json` file:
 
-```
+```json
 "scripts": {
     "cs-check": "vendor/bin/phpcs --standard=PSR12 ./src-dir any-other-file.php --colors",
 }
@@ -53,7 +53,7 @@ For convenience, add a composer script to your `composer.json` file:
 
 Then you can just run:
 
-```
+```bash
 $ composer cs-check
 ```
 
@@ -70,13 +70,13 @@ We use the [PHP Mess Detector](https://phpmd.org/) as a tool for helping to find
 
 You can install as a composer dev requirement
  
-```
+```bash
 $ composer require --dev phpmd/phpmd
 ```
 
 Create a file `phpmd-ruleset.xml` in the project's root dir:
 
-```
+```xml
 <?xml version="1.0"?>
 <ruleset name="PublishPress Plugin"
          xmlns="http://pmd.sf.net/ruleset/1.0.0"
@@ -100,7 +100,7 @@ Create a file `phpmd-ruleset.xml` in the project's root dir:
 
 You can use the tool running:
 
-```
+```bash
 $ vendor/bin/phpmd ./src ansi phpmd-ruleset.xml
 ```
 
@@ -108,7 +108,7 @@ $ vendor/bin/phpmd ./src ansi phpmd-ruleset.xml
 
 For convenience, you can create a composer script:
 
-```
+```json
 "scripts": {
     "mess-check": "vendor/bin/phpmd ./src ansi phpmd-ruleset.xml"
 }
@@ -116,7 +116,7 @@ For convenience, you can create a composer script:
 
 For checking all the source folder you just need to run:
 
-```
+```bash
 $ composer mess-check
 ```
 
@@ -130,7 +130,7 @@ In order to detect copied, or repeated code, we use [PHP Copy/Paste Detector (PH
 
 You can install as a composer dev requirement
  
-```
+```bash
 $ composer require --dev sebastian/phpcpd
 ```
 
@@ -138,7 +138,7 @@ $ composer require --dev sebastian/phpcpd
 
 You can use the tool running:
 
-```
+```bash
 $ vendor/bin/phpcpd ./src
 ```
 
@@ -146,7 +146,7 @@ $ vendor/bin/phpcpd ./src
 
 For convenience, you can create a composer script:
 
-```
+```json
 "scripts": {
     "copy-check": "vendor/bin/phpcpd ./src"
 }
@@ -154,6 +154,6 @@ For convenience, you can create a composer script:
 
 For checking all the source folder you just need to run:
 
-```
+```bash
 $ composer copy-check
 ```
