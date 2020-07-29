@@ -1,12 +1,12 @@
 ---
 layout: page
-title: Building
+title: Building a Package
 permalink: /docs/deployment/building
 nav_order: 1
 parent: Deployment
 ---
 
-# Building
+# Building a Package
 {: .no_toc }
 
 ## Table of contents
@@ -17,21 +17,48 @@ parent: Deployment
 
 ---
 
-## The builder
+## Requirements
+
+* Composer - More details on the [Dependency Management documentation]({% link docs/development/dependency-management.md %}).
+* PHP 7.3+ - Our plugins still support PHP 5.6, but the build scripts and other development tools require PHP 7.
+
+Composer will manage all the other dependencies, including the build tool. We consider you have it properly installed.
+
+## How to build a package
 
 We use a set of custom tasks that run on [Robo](https://robo.li/), a task runner for PHP.
-The project is stored on Github as [publishpress/PublishPress-Plugin-Builder](https://github.com/publishpress/PublishPress-Plugin-Builder/).
+The project's repository is [publishpress/PublishPress-Plugin-Builder](https://github.com/publishpress/PublishPress-Plugin-Builder/).
 
 
-### Installing using Composer
+### Installing the builder
 
-For installing we do recommend using Composer for managing the different dependencies. Just make sure to add the library as a dev requirement.
+You can install the builder scripts running the following command:
 
 ```
 $ composer require --dev publishpress/publishpress-plugin-builder
 ```
 
 Create a new file in the project's root dir: `RoboFile.php`:
+
+```
+<?php
+
+/**
+ * This is project's console commands configuration for Robo task runner.
+ *
+ * @see http://robo.li/
+ */
+class RoboFile extends \PublishPressBuilder\PackageBuilderTasks
+{
+}
+```
+
+### Removing files from the built package
+
+The builder automatically removes some files from the built package to keep it clean. Tests, configuration files for the development tools, .git folder, and others, are not added to the zip file.
+You can check the full [list of files that will be removed](https://github.com/publishpress/PublishPress-Plugin-Builder/blob/master/files-to-ignore.txt). 
+
+For adding more files to that list, feel free to submit a Pull Request updating that file or customizing your Robo script using the method `appendToFileToIgnore`:
 
 ```
 <?php
@@ -65,37 +92,29 @@ class RoboFile extends \PublishPressBuilder\PackageBuilderTasks
 }
 ```
 
-### Ignored files
-
-By default, the builder will ignore a big list of files specified on a .txt file in the builder code. You can [see that file here](https://github.com/publishpress/PublishPress-Plugin-Builder/blob/master/files-to-ignore.txt).
-
-Actually it remove those files from the built package if they exist.
-
-You can specify your own list of files using the method `appendToFileToIgnore` like the example of Robo file above.
-
 ### Destination directory
 
-The builder will create a `./dist` dir inside the project's root dir and use it as a temporary folder for the files and final .zip file. 
+The builder will create a `./dist` folder inside the project's root dir and use it as a temporary folder for the files and final .zip file. 
 
-If you want, you can choose a different location for the final package so you can have a common folder where you store all the built packages. A Dropbox folder will make very easy to share a link for those packages, in case you need to send them to a client for testing.
+If you want, you can choose a different location for the final package, so you can have a common folder where you store all the built packages. A Dropbox folder will be very handy to get a shareable link for those packages, in case you need to send them to a client for testing.
 
-For setting a custom destination dir, you can create a YAML file in the project's root dir, named as `builder.yml`:
+For setting a custom destination dir, you can create a YAML file `builder.yml` in the project's root dir:
 
 ```
 destination: "/Users/developer/Dropbox/Tmp-Packages/"
 ```
 
-## Building a .zip package
+## Creating a zip file
 
-For building a .zip package you can run the command:
+For creating a .zip package you just need to run the following command:
 
 ```
 $ vendor/bin/robo build
 ```
 
-## Building to a folder (no .zip file)
+## Building to a folder instead of to a zip file
 
-Sometimes you want to build the final code to a directory instead of to a .zip file. If that is the case you can run the following command:
+Sometimes you want to build the final code to a directory instead of to a zip file. If that is the case you can run the following command:
 
 ```
 $ vendor/bin/robo build:unpacked
