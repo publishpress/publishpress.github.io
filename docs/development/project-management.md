@@ -1,8 +1,8 @@
 ---
 layout: page
 title: Project Management
-permalink: /docs/deployment/project-management
-nav_order: 2
+permalink: /docs/development/project-management
+nav_order: 3
 parent: Development
 ---
 

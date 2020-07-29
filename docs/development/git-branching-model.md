@@ -1,8 +1,8 @@
 ---
 layout: page
 title: Git Branching Model
-permalink: /docs/deployment/git-branching-model
-nav_order: 3
+permalink: /docs/development/git-branching-model
+nav_order: 2
 parent: Development
 ---
 

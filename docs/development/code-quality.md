@@ -1,8 +1,9 @@
 ---
 layout: page
 title: Code Quality
-permalink: /docs/deployment/code-quality
+permalink: /docs/development/code-quality
 parent: Development
+nav_order: 5
 ---
 
 # Code Quality

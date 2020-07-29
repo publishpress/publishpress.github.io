@@ -1,8 +1,9 @@
 ---
 layout: page
 title: Dependency Management
-permalink: /docs/deployment/dependency-management
+permalink: /docs/development/dependency-management
 parent: Development
+nav_order: 4
 ---
 
 # Dependency Management
