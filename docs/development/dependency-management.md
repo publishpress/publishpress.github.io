@@ -17,6 +17,10 @@ nav_order: 4
 
 ---
 
-## PHP Dependencies
+## Dependencies on PHP
 
 We use [Composer](https://getcomposer.org/) as dependency manager for any 3rd party library or even the [Free plugin in the Pro plugin]({% link docs/free-pro.md %}).
+
+## Dependencies on JavaScript
+
+For the JS dependencies, usually for development tools onl, we use [npm](https://www.npmjs.com/).
