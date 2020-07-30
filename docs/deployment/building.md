@@ -2,7 +2,7 @@
 layout: page
 title: Building a Package
 permalink: /docs/deployment/building
-nav_order: 1
+nav_order: 2
 parent: Deployment
 ---
 
