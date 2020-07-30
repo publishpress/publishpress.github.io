@@ -49,7 +49,7 @@ name: CI
 
 on:
   push:
-    branches: [ master, development ]
+    branches: [ master, development, your-new-branch ]
   pull_request:
     branches: [ master, development ]
 
