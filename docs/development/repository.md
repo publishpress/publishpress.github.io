@@ -42,11 +42,11 @@ If needed, update the URL for the contributor guidelines file.
 
 #### .github/ISSUE_TEMPLATE/release-free-plugin.md
 
-[Example](https://github.com/publishpress/publishpress.github.io/blob/master/examples/release-free-plugin.md)
+[Example](https://github.com/publishpress/publishpress.github.io/blob/master/examples/release-free-plugin.md.dist)
 
 #### .github/ISSUE_TEMPLATE/release-pro-plugin.md
 
-[Example](https://github.com/publishpress/publishpress.github.io/blob/master/examples/release-pro-plugin.md)
+[Example](https://github.com/publishpress/publishpress.github.io/blob/master/examples/release-pro-plugin.md.dist)
 
 ### composer.json
 
