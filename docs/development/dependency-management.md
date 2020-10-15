@@ -21,6 +21,8 @@ nav_order: 4
 
 We use [Composer](https://getcomposer.org/) as dependency manager for any 3rd party library or even the [Free plugin in the Pro plugin]({% link docs/free-pro.md %}).
 
+See the documentation for adding support to "composer/installers": [Preparing for Composer]({% link docs/development/preparing-composer.md %}) 
+
 ## Dependencies on JavaScript
 
 For the JS dependencies, usually for development tools onl, we use [npm](https://www.npmjs.com/).
