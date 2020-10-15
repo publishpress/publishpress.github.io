@@ -221,3 +221,39 @@ Pro plugins require at least two dependencies:
 
 The Free plugin (as a library - see [Free plugin in the Pro plugin]({% link docs/free-pro.md %})) and the Installers, that pack scripts to handle the
 plugin installation on sites using Composer. 
+
+### Example of the client configuration
+
+An example of `composer.json` file that uses WPStarter and define the Pro plugin as dependency:
+
+```json
+{
+  "name": "gmazzap/wpstarter-simple-example",
+  "description": "Example project for WordPress + Composer + WP Starter",
+  "type": "project",
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://wpackagist.org"
+    },
+    {
+      "type": "vcs",
+      "url": "https://github.com/publishpress/My-Plugin-Pro.git"
+    }
+  ],
+  "require": {
+    "wecodemore/wpstarter": "~2.0",
+    "publishpress/my-plugin-pro": "*"
+  },
+  "config": {
+    "vendor-dir": "wp-content/vendor"
+  },
+  "scripts": {
+    "post-install-cmd": "WCM\\WPStarter\\Setup::run",
+    "post-update-cmd": "WCM\\WPStarter\\Setup::run"
+  },
+  "extra": {
+    "wordpress-install-dir": "wp"
+  }
+}
+```
