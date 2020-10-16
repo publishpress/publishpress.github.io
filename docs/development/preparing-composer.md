@@ -228,6 +228,7 @@ plugin installation on sites using Composer.
 
 ### Example of the client configuration
 
+#### composer.json
 An example of `composer.json` file that uses WPStarter and define the Pro plugin as dependency:
 
 ```json
@@ -264,4 +265,14 @@ An example of `composer.json` file that uses WPStarter and define the Pro plugin
     "wordpress-install-dir": "wp"
   }
 }
+```
+#### wp-config.php
+
+The client need to define the following constants so the Free plugin is able to get 
+assets from the correct path and URL. This is required because they can set custom 
+paths for the vendor dir, and we can't find out automatically for now. 
+
+```php
+define('PUBLISHPRESS_CUSTOM_VENDOR_URL', 'https://dev.local/wp-content/vendor/');
+define('PUBLISHPRESS_CUSTOM_VENDOR_PATH', '/Users/me/Local Sites/dev/app/public/wp-content/vendor/');
 ```
