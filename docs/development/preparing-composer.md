@@ -276,3 +276,13 @@ paths for the vendor dir, and we can't find out automatically for now.
 define('PUBLISHPRESS_CUSTOM_VENDOR_URL', 'https://dev.local/wp-content/vendor/');
 define('PUBLISHPRESS_CUSTOM_VENDOR_PATH', '/Users/me/Local Sites/dev/app/public/wp-content/vendor/');
 ```
+
+#### SSH access to our private repos
+
+If the client have an active plan he can [e-mail us](mailto:help@publishpress.com)" sending his public SSH key and asking for being included in the repository.
+
+We need to add his SSH key as a deployment key on the specific repository. Please, don't give complete access to the repository.
+
+In case he need more info about how to generate SSH keys you can send him this documentation: [Generating a new SSH key and adding it to the ssh-agent](https://docs.github.com/en/free-pro-team@latest/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent).
+
+Those keys need to be generated, or installed, in the server he wants to install our plugins using Composer.
