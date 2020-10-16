@@ -201,12 +201,16 @@ usually `wp-content/plugins`.
 #### Property: repositories
 
 In order to get the code of the Free plugin from the right place we define a
-specific repository for it:
+specific repository for it, and one for the Pro plugin:
 
 ```json
 {
   "type": "vcs",
   "url": "https://github.com/publishpress/My-Plugin.git"
+},
+{
+  "type": "vcs",
+  "url": "https://github.com/publishpress/My-Plugin-Pro.git"
 }
 ```
 
@@ -235,6 +239,10 @@ An example of `composer.json` file that uses WPStarter and define the Pro plugin
     {
       "type": "composer",
       "url": "https://wpackagist.org"
+    },
+    {
+        "type": "vcs",
+        "url": "https://github.com/publishpress/My-Plugin.git"
     },
     {
       "type": "vcs",
