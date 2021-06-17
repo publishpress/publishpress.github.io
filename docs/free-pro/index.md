@@ -3,6 +3,7 @@ layout: page
 title: Free and Pro Versions
 permalink: /docs/free-pro-versions
 nav_order: 2
+has_children: true
 ---
 
 # Free and Pro Versions
@@ -46,7 +47,7 @@ if (defined('PUBLISHPRESS_CUSTOM_VENDOR_PATH') && defined('PUBLISHPRESS_CUSTOM_V
     } else {
         define('PUBLISHPRESS_URL', plugins_url('/', 'publishpress/publishpress.php'));
     }
-``` 
+```
 
 Then we need to instruct the clients to specify the vendor path and url constants in their `wp-config.php` file:
 
