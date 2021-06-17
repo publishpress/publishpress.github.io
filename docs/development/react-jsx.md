@@ -34,7 +34,7 @@ Please, read the [React JS documentation](https://reactjs.org/docs/introducing-j
 ### Configuring npm and installing dependencies
 
 Create a `package.json` file adding the following content:
- 
+
 ```json
 {
   "name": "my-plugin",
@@ -79,7 +79,7 @@ Sometimes npm requires to run additional commands like `npm fund` or `npm audit 
 
 ### Configuring Webpack
 
-Create a file `webpack.confi.js` with the following content:
+Create a file `webpack.config.js` with the following content:
 
 ```js
 const NODE_ENV = process.env.NODE_ENV || 'development';
@@ -109,7 +109,7 @@ module.exports = {
 };
 ```
 
-Add the .jsx files you want to compile and merge in the `entry` attribute. 
+Add the .jsx files you want to compile and merge in the `entry` attribute.
 
 ## Compiling JSX files
 
@@ -119,11 +119,11 @@ Considering you added the specific scripts entry to the `package.json` file you 
 $ npm run build
 ```
 
-This command will call webpack and compile the files you added to the `entry` attribute, 
+This command will call webpack and compile the files you added to the `entry` attribute,
 merging and minimizing the final file, which will be added to the `assets/js` folder, by default.
 Feel free to customize the output path if needed.
 
-You can enqueue the minimized JS file (added to `assets/js` folder by default). 
+You can enqueue the minimized JS file (added to `assets/js` folder by default).
 
 The build command should be ran after every change to the JSX file otherwise the changes won't be added to the JS file.
 So to avoid calling that command every time you can use the webpack's `--watch` parameter running:
@@ -132,4 +132,4 @@ So to avoid calling that command every time you can use the webpack's `--watch` 
 $ npm run watch
 ```  
 
-That command will start a script that will be watching for changes on the selected files and compiling the JSX file automatically. 
+That command will start a script that will be watching for changes on the selected files and compiling the JSX file automatically.
