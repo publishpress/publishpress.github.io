@@ -118,7 +118,7 @@ And the `autoload` property should be defined as:
 
 #### Assets loading
 
-Please, see the instructions here: [Free plugin in the Pro plugin]({% link docs/free-pro.md %}) 
+Please, see the instructions here: [Free plugin in the Pro plugin]({% link docs/free-pro/index.md %}) 
 
 ### Example of the client configuration
 
@@ -223,7 +223,7 @@ Pro plugins require at least two dependencies:
 "composer/installers": "~1.0"
 ```
 
-The Free plugin (as a library - see [Free plugin in the Pro plugin]({% link docs/free-pro.md %})) and the Installers, that pack scripts to handle the
+The Free plugin (as a library - see [Free plugin in the Pro plugin]({% link docs/free-pro/index.md %})) and the Installers, that pack scripts to handle the
 plugin installation on sites using Composer. 
 
 ### Example of the client configuration
