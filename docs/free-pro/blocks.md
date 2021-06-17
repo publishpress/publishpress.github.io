@@ -22,7 +22,7 @@ parent: Free and Pro Versions
 
 ## Free and Pro
 
-This guidelines applies for both, [PublishPress Blocks Free](https://github.com/publishpress/PublishPress-Blocks/) and [PublishPress Blocks Pro](https://github.com/publishpress/PublishPress-Blocks-Pro/) versions.
+This guidelines applies for both, [PublishPress Blocks Free](https://github.com/publishpress/PublishPress-Blocks/) and PublishPress Blocks Pro versions.
 
 Clone the Github repositories in local.
 
@@ -40,7 +40,7 @@ Install the `npm` dependencies:
 $ npm install --save-dev
 ```
 
-Repeat the process for PublishPress-Blocks-Pro.
+Repeat the process for Pro.
 
 Install `gulp-cli` globally:
 
