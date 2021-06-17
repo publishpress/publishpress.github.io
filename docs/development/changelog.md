@@ -17,6 +17,8 @@ nav_order: 10
 
 ---
 
+Documentation based on [Keepchangelog](https://keepachangelog.com/).
+
 ## Version Number Specification
 
 It is important to note that our plugins follow the [Semantic Versioning](https://semver.org/) specification.
@@ -112,8 +114,6 @@ Before releasing you can reorganize the `UNRELEASED` section and convert it into
 
 
 ## Principles
-
-Based on [Keepchangelog](https://keepachangelog.com/):
 
 * Write the changelog for humans, not machines.
 * Every version should have a changelog.
