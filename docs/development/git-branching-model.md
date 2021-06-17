@@ -2,7 +2,7 @@
 layout: page
 title: Git Branching Model
 permalink: /docs/development/git-branching-model
-nav_order: 2
+nav_order: 3
 parent: Development
 ---
 

@@ -2,7 +2,7 @@
 layout: page
 title: Repository Organization
 permalink: /docs/development/repository
-nav_order: 1
+nav_order: 2
 parent: Development
 ---
 

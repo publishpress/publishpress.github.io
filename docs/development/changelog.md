@@ -3,7 +3,7 @@ layout: page
 title: Changelog
 permalink: /docs/development/changelog
 parent: Development
-nav_order: 5
+nav_order: 10
 ---
 
 # Changelog

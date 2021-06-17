@@ -3,7 +3,7 @@ layout: page
 title: Code Quality
 permalink: /docs/development/code-quality
 parent: Development
-nav_order: 5
+nav_order: 6
 ---
 
 # Code Quality

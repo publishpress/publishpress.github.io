@@ -2,7 +2,7 @@
 layout: page
 title: React JS and JSX Files
 permalink: /docs/development/react-jsx
-nav_order: 6
+nav_order: 7
 parent: Development
 ---
 

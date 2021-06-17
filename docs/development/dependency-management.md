@@ -3,7 +3,7 @@ layout: page
 title: Dependency Management
 permalink: /docs/development/dependency-management
 parent: Development
-nav_order: 4
+nav_order: 5
 ---
 
 # Dependency Management
