@@ -66,8 +66,8 @@ The CSS is compiled automatically when any `.scss` file is modified after runnin
 $ npm run compile_css
 ```
 
-* For the Free repository, the compiled file is stored in `assets/css/blocks.css`
-* For the Pro repository, the compiled file is stored in `assets/css/blocks-pro.css`
+* For the Free repository, the compiled files are stored in `assets/css/` folder.
+* For the Pro repository, the compiled file is `assets/css/blocks-pro.css`.
 
 ### Compile Javascript
 
@@ -77,8 +77,8 @@ The Javascript for the blocks is compiled automatically when any `.jsx` file is 
 $ npm run build_react_dev
 ```
 
-* For the Free repository, the compiled file is stored in `assets/blocks/blocks.js and frontend.js`
-* For the Pro repository, the compiled file is stored in `assets/blocks/blocks-pro.js`
+* For the Free repository, the compiled files are `assets/blocks/blocks.js and frontend.js`.
+* For the Pro repository, the compiled file is `assets/blocks/blocks-pro.js`.
 
 To compile/minify other specific javascript files, please refer to the scripts in `package.json`.
 
