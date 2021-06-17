@@ -40,6 +40,8 @@ Install the `npm` dependencies:
 $ npm install --save-dev
 ```
 
+Repeat the process for PublishPress-Blocks-Pro.
+
 Install `gulp-cli` globally:
 
 ```
@@ -54,7 +56,7 @@ In order to create a WordPress plugin installer, run the command:
 $ gulp bundle
 ```
 
-You can find the zip in bundled folder.
+You can find the zip in `bundled` folder.
 
 ### Compile CSS
 
