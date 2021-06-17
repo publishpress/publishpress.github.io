@@ -77,7 +77,7 @@ The Javascript for the blocks is compiled automatically when any `.jsx` file is 
 $ npm run build_react_dev
 ```
 
-* For the Free repository, the compiled files are `assets/blocks/blocks.js and frontend.js`.
+* For the Free repository, the compiled files are `assets/blocks/blocks.js` and `assets/blocks/frontend.js`.
 * For the Pro repository, the compiled file is `assets/blocks/blocks-pro.js`.
 
 To compile/minify other specific javascript files, please refer to the scripts in `package.json`.
