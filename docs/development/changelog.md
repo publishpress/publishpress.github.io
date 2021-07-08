@@ -48,12 +48,13 @@ The current `readme.txt` file would have something like:
 The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
-= [4.2.2] - 2021-04-10 =
+= [4.2.2] - 10 Apr 2021 =
 
 * Fixed: Fix the feature E, #931;
 * Fixed: Fix the issue X on the feature D, #852;
 
-= [4.2.1] - 2021-04-09 =
+= [4.2.1] - 09 Apr 2021 =
+
 * Fixed: Fix that old crazy bug, #315;
 .
 .
@@ -71,12 +72,13 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 * Fixed: Fix the issue on the feature R, #851;
 
-= [4.2.2] - 2021-04-10 =
+= [4.2.2] - 10 Apr 2021 =
 
 * Fixed: Fix the feature E, #931;
 * Fixed: Fix the issue X on the feature D, #852;
 
-= [4.2.1] - 2021-04-09 =
+= [4.2.1] - 09 Apr 2021 =
+
 * Fixed: Fix that old crazy bug, #315;
 .
 .
@@ -98,12 +100,13 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 * Fixed: Fix the issue on the feature R, #851;
 * Fixed: Fix that bug on the feature U, #252;
 
-= [4.2.2] - 2021-04-10 =
+= [4.2.2] - 10 Apr 2021 =
 
 * Fixed: Fix the feature E, #931;
 * Fixed: Fix the issue X on the feature D, #852;
 
-= [4.2.1] - 2021-04-09 =
+= [4.2.1] - 09 Apr 2021 =
+
 * Fixed: Fix that old crazy bug, #315;
 .
 .
@@ -152,12 +155,12 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
-= [3.3.3] - 2021-06-16 =
+= [3.3.3] - 16 Jun 2021 =
 
 * Fixed: Fix the feature E, #931;
 * Fixed: Fix the issue X on the feature D, #852;
 
-= [3.3.2] - 2021-05-27 =
+= [3.3.2] - 27 May 2021 =
 
 * Added: Add new feature C, #329;
 * Changed: Change the default behavior of feature B, #341;
