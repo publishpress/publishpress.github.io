@@ -21,7 +21,7 @@ nav_order: 12
 
 Library for displaying a banner asking for a 5-star review on WordPress plugins.
 
-Repository: https://github.com/publishpress/wordpress-reviews
+Repository: [https://github.com/publishpress/wordpress-reviews](https://github.com/publishpress/wordpress-reviews)
 
 ### Installation
 
