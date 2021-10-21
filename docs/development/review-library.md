@@ -16,14 +16,11 @@ nav_order: 12
 {:toc}
 
 ---
-
-## PublishPress WordPress Reviews Library
-
 Library for displaying a banner asking for a 5-star review on WordPress plugins.
 
 Repository: [https://github.com/publishpress/wordpress-reviews](https://github.com/publishpress/wordpress-reviews)
 
-### Installation
+## Installation
 
 We recommend using composer for adding this library as requirement:
 
@@ -31,7 +28,7 @@ We recommend using composer for adding this library as requirement:
 $ composer require publishpress/wordpress-reviews
 ```
 
-### How to use it
+## How to use it
 
 If your plugin do not load composer's autoloader yet, you need to add the following code:
 
@@ -154,11 +151,11 @@ function my_plugin_wp_reviews_meta_map($metaMap)
 }
 ```
 
-### Testing
+## Testing
 
 You can easily test the banner in the WordPress admin.
 After initializing the library, change the option `publishpress_wp_reviews_installed_on` in the options table. Set it for an older data to make sure the time difference is bigger than the trigger we are using.
 
-### Copyright
+## Copyright
 
 Based on the [library](https://github.com/danieliser/WP-Product-In-Dash-Review-Requests) created by [Daniel Iser](https://danieliser.com).
