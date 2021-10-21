@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Plugin WP Review Library
+title: WordPress Review Library
 permalink: /docs/development/review-library
 parent: Development
 nav_order: 12
