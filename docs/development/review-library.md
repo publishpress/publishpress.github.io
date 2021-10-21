@@ -6,14 +6,14 @@ parent: Development
 nav_order: 12
 ---
 
-# Changelog
+# WordPress Review Library
 {: .no_toc }
 
 ## Table of contents
 {: .no_toc .text-delta }
 
 1. TOC
-   {:toc}
+{:toc}
 
 ---
 
