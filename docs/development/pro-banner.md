@@ -17,7 +17,7 @@ nav_order: 13
 
 ---
 This page will describes how to display the purple banner on top of our plugin pages, telling users about the Pro version
-Repository: [https://github.com/publishpress/wordpress-reviews](https://github.com/publishpress/wordpress-reviews)
+Repository.
 
 ## Installation
 
@@ -29,5 +29,3 @@ Repository: [https://github.com/publishpress/wordpress-reviews](https://github.c
 
 ## Testing
 
-You can easily test the banner in the WordPress admin.
-After initializing the library, change the option `publishpress_wp_reviews_installed_on` in the options table. Set it for an older data to make sure the time difference is bigger than the trigger we are using.
