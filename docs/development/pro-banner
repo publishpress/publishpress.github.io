@@ -1,12 +1,12 @@
 ---
 layout: page
-title: WordPress Review Library
-permalink: /docs/development/review-library
+title: Pro Banner
+permalink: /docs/development/pro-banner
 parent: Development
 nav_order: 13
 ---
 
-# WordPress Review Library
+# Pro Banner
 {: .no_toc }
 
 ## Table of contents
