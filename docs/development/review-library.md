@@ -22,7 +22,7 @@ Repository: [https://github.com/publishpress/wordpress-reviews](https://github.c
 
 ## Installation
 
-We recommend using composer for adding this library as requirement:
+We do recommend using composer for adding this library as a requirement:
 
 ```shell
 $ composer require publishpress/wordpress-reviews
@@ -30,7 +30,7 @@ $ composer require publishpress/wordpress-reviews
 
 ## How to use it
 
-If your plugin do not load composer's autoloader yet, you need to add the following code:
+If your plugin does not load the composer's autoloader yet, you need to add the following code:
 
 ```php
 <?php
@@ -38,18 +38,18 @@ If your plugin do not load composer's autoloader yet, you need to add the follow
 require_once 'vendor/autoload.php';
 ```
 
-The library should be initialized in the method of your plugin that load the main WordPress hooks.
-You can add it to the main class fo the plugin. When instantiating it you have to pass 3 params: the plugin slug (the same one used in the URL of the WordPress repository), the plugin's name and the logo url (optional).
+The library should be initialized in the method of your plugin that loads the main WordPress hooks.
+You can add it to the main class of the plugin. When instantiating it you have to pass 3 params: the plugin slug (the same one used in the URL of the WordPress repository), the plugin's name, and the logo URL (optional).
 
-Pro plugins doesn't require this library, if they use they embed the free plugin. If you instantiate this library on both free and pro plugins, users will probably see duplicated banners.
+Pro plugins don't require this library, if they use they embed the free plugin. If you instantiate this library on both free and pro plugins, users will probably see duplicated banners.
 
-It by default displays the banner when the following conditional is true:
+It by default displays the banner when the following condition is true:
 
 ```php
 is_admin() && current_user_can('edit_posts')
 ```
 
-But you are able to specify the criteria used on the conditional to display the banner. For that you can hook into the filter `publishpress_wp_reviews_display_banner_<plugin_slug>`.
+But you can specify custom criteria to display the banner hooking into the filter `<plugin_slug>_wp_reviews_allow_display_notice`.
 
 ```php
 <?php
@@ -75,7 +75,7 @@ class MyPlugin
     public function init()
     {
         // .......
-        add_filter('publishpress_wp_reviews_display_banner_publishpress', [$this, 'shouldDisplayBanner']);
+        add_filter('my-plugin_wp_reviews_allow_display_notice', [$this, 'shouldDisplayBanner']);
         
         $this->reviewController->init();
     }
@@ -111,7 +111,7 @@ class MyPlugin
 }
 ```
 
-By default, the library will use the plugin's slug as prefix for the actions, meta data and options:
+By default, the library will use the plugin's slug as a prefix for the actions, metadata and options:
 
 ```php
 [
@@ -125,14 +125,13 @@ By default, the library will use the plugin's slug as prefix for the actions, me
 ]
 ```
 
-If you already use
-the original library in your plugin and want to keep compatibility with the current sites data, you can customize the
-hooks and keys for the data stored in the DB using the filter `publishpress_wp_reviews_meta_map_<plugin_slug>`:
+If you already use the original library in your plugin and want to keep compatibility with current sites data, you can customize the
+hooks and keys for the data stored in the DB using the filter `<plugin_slug>_wp_reviews_meta_map`:
 
 ```php
 <?php
 
-add_filter('publishpress_wp_reviews_meta_map_my_plugin', 'my_plugin_wp_reviews_meta_map');
+add_filter('my-plugin_wp_reviews_meta_map', 'my_plugin_wp_reviews_meta_map');
 
 function my_plugin_wp_reviews_meta_map($metaMap)
 {
@@ -154,7 +153,7 @@ function my_plugin_wp_reviews_meta_map($metaMap)
 ## Testing
 
 You can easily test the banner in the WordPress admin.
-After initializing the library, change the option `publishpress_wp_reviews_installed_on` in the options table. Set it for an older data to make sure the time difference is bigger than the trigger we are using.
+After initializing the library, change the option `<plugin-slug>_wp_reviews_installed_on` in the options table. Set it for older data to make sure the time difference is bigger than the trigger we are using.
 
 ## Copyright
 
