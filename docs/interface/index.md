@@ -14,24 +14,24 @@ Documentation for the UI elements.
 
 ![Primary button](/assets/img/interface/primary-button.png)
 
-Primary button uses `button button-primary` classes along with CSS to override the default style from primary button from WordPress core.
+Primary button uses `button-primary` class along with CSS to override the default style from primary button from WordPress core.
 
 Input type submit:
 
 ```
-<input type="submit" class="button button-primary" value="Primary button">
+<input type="submit" class="button-primary" value="Primary button">
 ```
 
 Button:
 
 ```
-<button class="button button-primary">Primary button</button>
+<button class="button-primary">Primary button</button>
 ```
 
 Link:
 
 ```
-<a href="#" class="button button-primary">Primary button</a>
+<a href="#" class="button-primary">Primary button</a>
 ```
 
 ## Horizontal Tabs
