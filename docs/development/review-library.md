@@ -44,9 +44,9 @@ It can be instantiated and initialized in the method that loads the main WordPre
 
 When instantiating this library, you have to pass three params:
 
-the plugin slug (the same one used in the URL of the WordPress repository)
-the plugin's name
-the URL for the logo (optional)
+* the plugin slug (the same one used in the URL of the WordPress repository)
+* the plugin's name
+* the URL for the logo (optional)
 
 It by default displays the banner when the following conditional is true:
 
