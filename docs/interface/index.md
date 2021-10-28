@@ -45,12 +45,12 @@ The HTML structure for horizontal tabs is as follows along with Javascript and C
     <li class="nav-tab nav-tab-active">
       <a href="#pp-tab-1">Tab 1</a>
     </li>
-    <li class="nav-tab">
-			<a href="#pp-tab-2">Tab 2</a>
-		</li>
-    <li class="nav-tab">
-			<a href="#pp-tab-3">Tab 3</a>
-		</li>
+    <li class="nav-tab nav-tab-active">
+      <a href="#pp-tab-2">Tab 2</a>
+    </li>
+    <li class="nav-tab nav-tab-active">
+      <a href="#pp-tab-3">Tab 3</a>
+    </li>
 </ul>
 
 <div id="pp-tab-1">
