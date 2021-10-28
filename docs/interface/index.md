@@ -59,7 +59,35 @@ The HTML structure for horizontal tabs is as follows along with Javascript and C
 <div id="pp-tab-2" style="display:none;">
   Second tab content
 </div>
-<div id="pp-tab-1" style="display:none;"
+<div id="pp-tab-3" style="display:none;">
   Third tab content
+</div>
+```
+
+## Vertical Tabs
+
+![Vertical tabs](/assets/img/interface/vertical-tabs.png)
+
+The HTML structure for vertical tabs is as follows along with Javascript and CSS. Take PublishPress Capabilities main screen as example.
+
+```
+<div class="postbox">
+  <div class="pp-tabs">
+    <ul>
+      <li data-content="pp-tab-1" class="pp-tab-active">Tab 1</li>
+      <li data-content="pp-tab-2">Tab 2</li>
+      <li data-content="pp-tab-3">Tab 3</li>
+    </ul>
+  </div>
+  <div class="pp-content">
+    <div id="pp-tab-1">
+      First tab content
+    </div>
+    <div id="pp-tab-2" style="display:none;">
+      Second tab content
+    </div>
+    <div id="pp-tab-3" style="display:none;">
+      Third tab content
+    </div>
 </div>
 ```
