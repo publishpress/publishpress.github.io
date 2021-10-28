@@ -33,3 +33,47 @@ Link:
 ```
 <a href="#" class="button button-primary">Primary button</a>
 ```
+
+## Horizontal Tabs
+
+The HTML structure for horizontal tabs is a s follows along with Javascript and CSS to override the default style from tabs from WordPress core.
+
+<ul class="nav-tab-wrapper">
+    <li class="nav-tab nav-tab-active">
+      <a href="#pp-tab-1">Tab 1</a>
+    </li>
+    <li class="nav-tab">
+			<a href="#pp-tab-2">Tab 2</a>
+		</li>
+    <li class="nav-tab">
+			<a href="#pp-tab-3">Tab 3</a>
+		</li>
+</ul>
+
+<div id="pp-tab-1">
+  First tab content
+</div>
+
+```
+<ul class="nav-tab-wrapper">
+    <li class="nav-tab nav-tab-active">
+      <a href="#pp-tab-1">Tab 1</a>
+    </li>
+    <li class="nav-tab">
+			<a href="#pp-tab-2">Tab 2</a>
+		</li>
+    <li class="nav-tab">
+			<a href="#pp-tab-3">Tab 3</a>
+		</li>
+</ul>
+
+<div id="pp-tab-1">
+  First tab content
+</div>
+<div id="pp-tab-2" style="display:none;">
+  Second tab content
+</div>
+<div id="pp-tab-1" style="display:none;"
+  Third tab content
+</div>
+```
