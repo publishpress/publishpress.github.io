@@ -12,9 +12,9 @@ Documentation for the UI elements.
 
 ## Buttons
 
-Primary button uses `button button-primary` classes along with CSS to override the default style from primary button from WordPress core.
+![Primary button](/assets/img/interface/primary-button.png)
 
-<button class="button button-primary">Primary button</button>
+Primary button uses `button button-primary` classes along with CSS to override the default style from primary button from WordPress core.
 
 Input type submit:
 
@@ -36,23 +36,9 @@ Link:
 
 ## Horizontal Tabs
 
-The HTML structure for horizontal tabs is a s follows along with Javascript and CSS to override the default style from tabs from WordPress core.
+![Horizontal tabs](/assets/img/interface/horizontal-tabs.png)
 
-<ul class="nav-tab-wrapper">
-    <li class="nav-tab nav-tab-active">
-      <a href="#pp-tab-1">Tab 1</a>
-    </li>
-    <li class="nav-tab">
-			<a href="#pp-tab-2">Tab 2</a>
-		</li>
-    <li class="nav-tab">
-			<a href="#pp-tab-3">Tab 3</a>
-		</li>
-</ul>
-
-<div id="pp-tab-1">
-  First tab content
-</div>
+The HTML structure for horizontal tabs is as follows along with Javascript and CSS to override the default style from tabs from WordPress core.
 
 ```
 <ul class="nav-tab-wrapper">
