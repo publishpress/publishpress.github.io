@@ -48,6 +48,8 @@ When instantiating this library, you have to pass three params:
 * the plugin's name
 * the URL for the logo (optional)
 
+### Configuring the criteria to display the banner in the Free plugin
+
 It by default displays the banner when the following conditional is true:
 
 ```php
@@ -116,6 +118,41 @@ class MyPlugin
 }
 ```
 
+### Configuring the criteria to display the banner in the Pro plugin
+
+In case the Pro plugin has additional pages where you want to display the banner, feel free to use the same filter as
+in the free plugin but with a higher priority. You can choose to override the conditions used in the Free plugin
+or to append more conditions, for different pages.
+
+```php
+add_filter('my-plugin_wp_reviews_allow_display_notice', [$this, 'shouldDisplayBanner'], 20);
+```
+
+```php
+ /**
+ * @param $shouldDisplay
+ * @return bool|null
+ */
+public function shouldDisplayBanner($shouldDisplay)
+{
+    global $pagenow;
+
+    if ($shouldDisplay) {
+        return true;
+    }
+    
+    if ($pagenow === 'edit.php' && isset($_GET['post_type'])) {
+        if ($_GET['post_type'] === 'custom-posttype') {
+            return true;
+        }
+    }
+
+    return $shouldDisplay;
+}
+```
+
+### Backward compatibility with older versions
+
 By default, the library will use the plugin's slug as a prefix for the actions, metadata, and options:
 
 ```php
@@ -165,8 +202,9 @@ probably see duplicated admin notices or will be asked for a review twice.
 Keeping the library activated only by the free plugin allows both versions, free and pro,
 to share the same options and metadata stored in the database, avoiding duplicated banners or review requests.
 
-Please, **only use this library in the Free plugin** and do not disable or block it in the Pro version. We want to keep it enabled
+Please, **only initialize this library in the Free plugin** and do not disable or block it in the Pro version. We want to keep it enabled
 for both free and pro users.
+
 
 ## Testing
 
