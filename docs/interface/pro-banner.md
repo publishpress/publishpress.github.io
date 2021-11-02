@@ -2,7 +2,7 @@
 layout: page
 title: Pro Banner
 permalink: /docs/interface/pro-banner
-parent: Interface
+parent: User Interface
 nav_order: 3
 ---
 

@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: page
 title: Brand Logo and Colors
 parent: About PublishPress
 permalink: /docs/about/brand/
