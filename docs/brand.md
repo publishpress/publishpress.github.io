@@ -5,7 +5,7 @@ permalink: /docs/brand/
 nav_order: 5
 ---
 
-# Brand - Logo and Colors
+# Brand Logo and Colors
 {: .no_toc }
 
 ## Table of contents
