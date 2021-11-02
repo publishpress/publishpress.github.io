@@ -3,7 +3,7 @@ layout: page
 title: WordPress Review Library
 permalink: /docs/interface/review-library
 parent: Interface
-nav_order: 12
+nav_order: 2
 ---
 
 # WordPress Review Library
