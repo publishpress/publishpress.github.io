@@ -1,9 +1,10 @@
 ---
 layout: page
-title: Interface
+title: User Interface
 description: "Documentation for user interface in PublishPress plugins"
 permalink: /docs/interface/guidelines
-nav_order: 1
+has_children: true
+nav_order: 10
 ---
 
 # Interface
