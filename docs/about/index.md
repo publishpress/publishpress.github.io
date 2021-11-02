@@ -1,7 +1,7 @@
 ---
 layout: page
 title: About PublishPress
-permalink: /docs/about/
+permalink: /docs/about/intro
 nav_order: 2
 has_children: true
 ---

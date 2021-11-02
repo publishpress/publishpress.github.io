@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Brand Logo and Colors
-parent: About
+parent: About PublishPress
 permalink: /docs/about/brand/
 nav_order: 2
 ---
