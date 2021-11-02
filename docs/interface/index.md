@@ -3,7 +3,6 @@ layout: page
 title: Interface
 description: "Documentation for user interface in PublishPress plugins"
 permalink: /docs/interface/guidelines
-parent: Interface
 nav_order: 1
 ---
 
