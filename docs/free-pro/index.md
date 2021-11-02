@@ -2,7 +2,7 @@
 layout: page
 title: Free and Pro Versions
 permalink: /docs/free-pro-versions
-nav_order: 2
+nav_order: 4
 has_children: true
 ---
 
