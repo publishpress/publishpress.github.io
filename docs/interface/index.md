@@ -2,7 +2,7 @@
 layout: page
 title: User Interface
 description: "Documentation for user interface in PublishPress plugins"
-permalink: /docs/interface/guidelines
+permalink: /docs/interface/
 has_children: true
 nav_order: 10
 ---
