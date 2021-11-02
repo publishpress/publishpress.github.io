@@ -1,8 +1,8 @@
 ---
 layout: page
 title: Pro Banner
-permalink: /docs/development/pro-banner
-parent: Development
+permalink: /docs/interface/pro-banner
+parent: Interface
 nav_order: 13
 ---
 

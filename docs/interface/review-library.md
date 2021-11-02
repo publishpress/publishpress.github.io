@@ -1,8 +1,8 @@
 ---
 layout: page
 title: WordPress Review Library
-permalink: /docs/development/review-library
-parent: Development
+permalink: /docs/interface/review-library
+parent: Interface
 nav_order: 12
 ---
 
