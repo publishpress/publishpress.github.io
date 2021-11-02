@@ -1,8 +1,9 @@
 ---
 layout: default
 title: Brand Logo and Colors
-permalink: /docs/brand/
-nav_order: 5
+parent: About
+permalink: /docs/about/brand/
+nav_order: 2
 ---
 
 # Brand Logo and Colors
