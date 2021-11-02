@@ -1,20 +1,20 @@
 ---
 layout: page
-title: Interface
-description: "Documentation for the interface process"
+title: User Interface
+description: "Documentation for user interface in PublishPress plugins"
 permalink: /docs/interface/
 nav_order: 6
 ---
 
 # Interface
 
-Documentation for the UI elements.
+This is documentation for the user interfaces in PublishPress plugins
 
 ## Buttons
 
 ![Primary button](/assets/img/interface/primary-button.png)
 
-Primary button uses `button button-primary` classes along with CSS to override the default style from primary button from WordPress core.
+The primary button in PublishPress plugins uses `button button-primary` classes along with CSS to override the default style from primary button from WordPress core.
 
 Input type submit:
 
@@ -68,7 +68,7 @@ The HTML structure for horizontal tabs is as follows along with Javascript and C
 
 ![Vertical tabs](/assets/img/interface/vertical-tabs.png)
 
-The HTML structure for vertical tabs is as follows along with Javascript and CSS. Take PublishPress Capabilities main screen as example.
+The HTML structure for vertical tabs is as follows along with Javascript and CSS. Let's take PublishPress Capabilities main screen as example.
 
 ```
 <div class="postbox">
