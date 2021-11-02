@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Brand - Logo and Colors
+title: Brand Logo and Colors
 permalink: /docs/brand/
 nav_order: 5
 ---
