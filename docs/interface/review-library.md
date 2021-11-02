@@ -1,9 +1,9 @@
 ---
 layout: page
-title: WordPress Review Library
+title: Review Library
 permalink: /docs/interface/review-library
-parent: Interface
-nav_order: 2
+parent: User Interface
+nav_order: 4
 ---
 
 # WordPress Review Library
