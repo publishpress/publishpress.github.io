@@ -1,6 +1,6 @@
 ---
 layout: page
-title: User Interface
+title: Interface
 description: "Documentation for user interface in PublishPress plugins"
 permalink: /docs/interface/guidelines
 parent: Interface
