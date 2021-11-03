@@ -7,8 +7,13 @@ nav_order: 1
 ---
 
 # Interface
+{: .no_toc }
 
-This is documentation for the UI Elements in PublishPress plugins
+## Table of contents
+{: .no_toc .text-delta }
+
+---
+This is the documentation for the UI Elements in PublishPress plugins.
 
 ## Buttons
 
