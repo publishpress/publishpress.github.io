@@ -20,5 +20,5 @@ We are a Github-first company. As much as possible our code and discussions, and
 
 # Our team
 
+- 30 hours of good work each week is enough. After that, the quality of our work goes down. Any extra time can be spent learning, researching, or trying new ideas.
 - We don't work on weekends.
-- 30 hours of good work each week is enough. After that, the quality of our work goes down
