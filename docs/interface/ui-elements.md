@@ -12,6 +12,9 @@ nav_order: 1
 ## Table of contents
 {: .no_toc .text-delta }
 
+1. TOC
+{:toc}
+
 ---
 This is the documentation for the UI Elements in PublishPress plugins.
 
