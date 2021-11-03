@@ -1,8 +1,8 @@
 ---
 layout: page
 title: UI Elements
-description: "Documentation for user UI Elements in PublishPress plugins"
 permalink: /docs/interface/ui-elements
+parent: User Interface
 nav_order: 1
 ---
 
