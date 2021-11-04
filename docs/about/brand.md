@@ -1,9 +1,9 @@
 ---
 layout: page
-title: Brand Logo and Colors
+title: Our Brand
 parent: About PublishPress
 permalink: /docs/about/brand/
-nav_order: 2
+nav_order: 3
 ---
 
 # Brand Logo and Colors
