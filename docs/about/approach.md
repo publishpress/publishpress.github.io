@@ -8,9 +8,9 @@ nav_order: 2
 
 # How we work 
 
-PublishPress is a Github-first company. As much as possible our code and discussions, and roadmaps are public on our Github repositories. We do ffor several reasons:
+PublishPress is a Github-first company. As much as possible, our code, discussions, and roadmaps are public on our Github repositories. We do this for several reasons:
 
-- It is good to share our work publicly.
+- We're an open source company. It is essential to share our work publicly.
 - It produces a written record of how we are thinking about solutions.
 - It enables collaboration between our team members, and allows outside contributors to collaborate with us.
 
