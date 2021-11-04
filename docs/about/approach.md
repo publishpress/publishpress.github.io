@@ -1,9 +1,9 @@
 ---
 layout: page
-title: About PublishPress
-permalink: /docs/approach
+title: Our Approach
+parent: About PublishPress
+permalink: /docs/about/approach/
 nav_order: 2
-has_children: true
 ---
 
 # How we work 
