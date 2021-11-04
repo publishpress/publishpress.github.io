@@ -23,8 +23,8 @@ To release the Pro plugin please make sure to check all the checkboxes below.
 
 ### Release Checklist
 
-- [ ] Create a Pull Request and merge the release branch it into the `master` branch
-- [ ] Merge the `master` branch into the `development` branch
-- [ ] Create the Github release (make sure it is based on the `master` branch and correct tag)
+- [ ] Create a Pull Request and merge the release branch it into the `master/main` branch
+- [ ] Merge the `master/main` branch into the `development` branch
+- [ ] Create the Github release (make sure it is based on the `master/main` branch and correct tag)
 - [ ] Update EDD registry and upload the new package
 - [ ] Make the final test updating the plugin in a staging site
