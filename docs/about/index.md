@@ -31,4 +31,7 @@ PublishPress is a Github-first company. As much as possible our code and discuss
 
 - 30 hours of good work each week is enough. After that, the quality of our work goes down. Any extra time can be spent learning, researching, or trying new ideas.
 - We don't work on weekends.
-- It helps to be good at clear written communication. The test of this is, can you write an accurate Github issue?
+- Sometimes we have bad days, or even bad weeks or months. It happens to all of us. Don't worry, we hire for the long term. On average, our staff have been with us for over five years.
+- It helps to be good at clear written communication. Can you write an accurate Github issue?
+- It is not important to be good with video calls and spoken English.
+- Meetings can be useful, but do not need to be held every day or even every week. What is important is clear, regular written communication and collaboration.
