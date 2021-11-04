@@ -32,8 +32,13 @@ A good practice is to add a GitHub issue template on every Free plugin repositor
 
 ### GitHub Issue Template for the checklists
 
-Save the [free plugin's checklist template file](../../examples/release-free-plugin.md.dist) at `.github/ISSUE_TEMPLATE/release-free-plugin.md`.
-Save the [pro plugin's checklist template file](../../examples/release-pro-plugin.md.dist) at `.github/ISSUE_TEMPLATE/release-pro-plugin.md`.
+Save the following files in the repository's `.github` subfolder: 
+
+* [Free plugin's checklist template file](../../examples/release-free-plugin.md.dist) at `.github/ISSUE_TEMPLATE/release-free-plugin.md`.
+* [Pro plugin's checklist template file](../../examples/release-pro-plugin.md.dist) at `.github/ISSUE_TEMPLATE/release-pro-plugin.md`.
+
+On every release, go to the GitHub issues page for the respective repository and create a new issue selecting one of templates above.
+Work on each step checking the boxes, then close the issue after finishing the process and 
 
 ### Base Checklist for Free plugins
 
