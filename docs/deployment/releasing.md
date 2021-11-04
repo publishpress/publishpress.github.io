@@ -37,7 +37,8 @@ Save the [pro plugin's checklist template file](../../examples/release-pro-plugi
 
 ### Base Checklist for Free plugins
 
-#### Pre-release Checklist
+```markdown
+### Pre-release Checklist
 
 - [ ] Create the release branch as `release-<version>` based on the development branch
 - [ ] Make sure to directly merge or use Pull Requests to merge hotfixes or features branches into the release branch
@@ -48,13 +49,13 @@ Save the [pro plugin's checklist template file](../../examples/release-pro-plugi
 - [ ] Build the zip package using `$ vendor/bin/robo build`. It should create a package in the `./dist` dir.
 - [ ] Send to the team for testing
 
-#### Release Checklist
+### Release Checklist
 
 - [ ] Create a Pull Request and merge the release branch it into the `master/main` branch
 - [ ] Merge the `master/main` branch into the `development` branch
 - [ ] Create the Github release (make sure it is based on the `master/main` branch and correct tag)
 
-##### SVN Repo
+#### SVN Repo
 - [ ] Cleanup the `trunk` directory.
 - [ ] Unzip the built package and move files to the `trunk`
 - [ ] Remove any eventual file that shouldn't be released in the package (if you find anything, make sure to create an issue to fix the build script)
@@ -63,10 +64,12 @@ Save the [pro plugin's checklist template file](../../examples/release-pro-plugi
 - [ ] Create the new tag `$ svn cp trunk tags/<version>`
 - [ ] Commit the changes `$ svn ci -m 'Releasing <version>'`
 - [ ] Wait until WordPress updates the version number and make the final test updating the plugin in a staging site
+```
 
 ### Base Checklist for Pro plugins
 
-#### Pre-release Checklist
+```markdown
+### Pre-release Checklist
 
 - [ ] Create the release branch as `release-<version>` based on the development branch
 - [ ] Make sure to directly merge or use Pull Requests to merge hotfixes or features branches into the release branch
@@ -78,10 +81,11 @@ Save the [pro plugin's checklist template file](../../examples/release-pro-plugi
 - [ ] Build the zip package using `$ vendor/bin/robo build`. It should create a package in the `./dist` dir.
 - [ ] Send to the team for testing
 
-#### Release Checklist
+### Release Checklist
 
 - [ ] Create a Pull Request and merge the release branch it into the `master/main` branch
 - [ ] Merge the `master/main` branch into the `development` branch
 - [ ] Create the Github release (make sure it is based on the `master/main` branch and correct tag)
 - [ ] Update EDD registry and upload the new package
 - [ ] Make the final test updating the plugin in a staging site
+```
