@@ -16,9 +16,9 @@ PublishPress is a Github-first company. As much as possible, our code, discussio
 
 # Our releases
 
-- Releases should only happen between Monday and Thursday. We don't want to disrupt the weekeends for customers or our staff. The only exception to this release schdule is in case of an absolute emergency.
 - We use Github milestones to plan releases and roadmaps.
 - We do not have firm deadlines for releases. We trust our team to do good work and we don't want rushed work.
+- Releases should only happen between Monday and Thursday. We don't want to disrupt the weekends for customers or our staff. The only exception to this release schdule is in case of an absolute emergency.
 
 # Our plugins
 
