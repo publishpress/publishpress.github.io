@@ -102,6 +102,8 @@ The HTML structure for vertical tabs is as follows along with Javascript and CSS
 
 ## Settings
 
+![Settings](/assets/img/interface/settings.png)
+
 The HTML structure for settings is as follows. One table row for each setting. Usually Settings are inside <a href="#horizontal-tabs">Horizontal Tabs</a>.
 
 ```
