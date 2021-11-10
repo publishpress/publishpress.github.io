@@ -99,3 +99,30 @@ The HTML structure for vertical tabs is as follows along with Javascript and CSS
     </div>
 </div>
 ```
+
+## Settings
+
+The HTML structure for settings is as follows. One table row for each setting. Usually Settings are inside <a href="#horizontal-tabs">Horizontal Tabs</a>.
+
+```
+<table class="form-table">
+    <tr>
+      <th scope="row">
+        Label
+      </th>
+      <td>
+          <input> Optional setting purpose
+          <p class="description">Optional description</p>
+      </td>
+    </tr>
+    <tr>
+      <th scope="row">
+        Label
+      </th>
+      <td>
+          <input> Optional setting purpose
+          <p class="description">Optional description</p>
+      </td>
+    </tr>
+</table>
+```
