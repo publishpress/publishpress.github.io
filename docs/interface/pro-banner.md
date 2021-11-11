@@ -33,9 +33,11 @@ Due to a conflict in the tests we didn't register the include file in the Compos
 
 ### Loading the library
 
+```php
 if (!defined('PP_VERSION_NOTICES_LOADED')) {
     require_once __DIR__ . '/vendor/publishpress/wordpress-version-notices/includes.php';
 }
+```
 
 ### Top Notice
 
@@ -59,9 +61,9 @@ add_filter(\PPVersionNotices\Module\TopNotice\Module::SETTINGS_FILTER, function 
 
 #### Params
 
-* message: Type the respective message for the banner, adding the button text between '%s'. This string will be used as format for `sprint` .
-* link: The full link for the button.
-* screen: An array of screen parameters used to decide what page should display the banner. Each item of the array can be a boolean or an array with a key-value array specifying the required params from the screen (WP_Screen) object. You can bypass the library's filter algorithm adding a `true` item to it. This allows you to create your own function to check the screen returning a boolean value.
+* **message**: Type the respective message for the banner, adding the button text between '%s'. This string will be used as format for `sprint` .
+* **link**: The full link for the button.
+* **screen**: An array of screen parameters used to decide what page should display the banner. Each item of the array can be a boolean or an array with a key-value array specifying the required params from the screen (WP_Screen) object. You can bypass the library's filter algorithm adding a `true` item to it. This allows you to create your own function to check the screen returning a boolean value.
 
 ### Menu link
 
