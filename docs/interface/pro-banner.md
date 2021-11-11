@@ -23,7 +23,7 @@ Repository.
 
 ## Installation
 
-```shell script
+```
 $ composer update --no-dev
 ```
 
@@ -109,19 +109,19 @@ Make sure to copy the file `.env.testing.dist` as `.env.testing` and update the 
 
 Install the dependencies using composer:
 
-```shell script
+```
 $ composer install
 ```
 
 or
 
-```shell script
+```
 $ composer update
 ```
 
 Run the script:
 
-```shell script
+```
 $ bin/test.sh
 ```
 
