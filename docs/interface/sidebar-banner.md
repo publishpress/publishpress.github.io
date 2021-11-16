@@ -8,4 +8,7 @@ nav_order: 4
 
 # Sidebar Banner
 
+---
+The Sidebar Banner purpose is to display instructions and advertisements.
+
 Content coming soon...
