@@ -3,7 +3,7 @@ layout: page
 title: Review Library
 permalink: /docs/interface/review-library
 parent: User Interface
-nav_order: 4
+nav_order: 5
 ---
 
 # WordPress Review Library
@@ -69,7 +69,7 @@ class MyPlugin
     * @var  ReviewsController
     */
     private $reviewController;
-    
+
     public function __construct()
     {
         $this->reviewController = new ReviewsController(
@@ -78,15 +78,15 @@ class MyPlugin
             MY_PLUGIN_URL . '/assets/img/logo.png'
         );
     }
-    
+
     public function init()
     {
         // .......
         add_filter('my-plugin_wp_reviews_allow_display_notice', [$this, 'shouldDisplayBanner']);
-        
+
         $this->reviewController->init();
     }
-    
+
     public function shouldDisplayBanner($shouldDisplay)
     {
         global $pagenow;
@@ -113,7 +113,7 @@ class MyPlugin
 
         return false;
     }
-    
+
     // .......
 }
 ```
@@ -140,7 +140,7 @@ public function shouldDisplayBanner($shouldDisplay)
     if ($shouldDisplay) {
         return true;
     }
-    
+
     if ($pagenow === 'edit.php' && isset($_GET['post_type'])) {
         if ($_GET['post_type'] === 'custom-posttype') {
             return true;
