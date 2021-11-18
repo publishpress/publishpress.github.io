@@ -39,7 +39,8 @@ Call `pp_install_banner()` somewhere in a custom admin page with all the appropr
 
 ```php
 <?php
-PP_WP_Banners::pp_install_banner(
+$banners = new PP_WP_Banners();
+$banners->pp_install_banner(
   $heading,
   $title,
   $contents,
@@ -62,7 +63,8 @@ Using Capabilities plugin banner inviting to install Permissions as example, thi
 
 ```php
 <?php
-PP_WP_Banners::pp_install_banner(
+$banners = new PP_WP_Banners();
+$banners->pp_install_banner(
     __( 'Recommendations for you', 'capsman-enhanced' ),
     __( 'Control permissions for individual posts and pages', 'capsman-enhanced' ),
     array(
