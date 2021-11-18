@@ -128,3 +128,7 @@ Don't forget to replace `CAPSMAN_PERMISSIONS_INSTALLED` with your own custom con
 #### ...and when the banner is not displayed:
 
 ![1 Column Layout](/assets/img/interface/sidebar-banner-1-column.jpg)
+
+## Updating
+
+To get the last version of the library when using in a given plugin, run `composer update`.
