@@ -35,12 +35,12 @@ if (!defined('PP_WP_BANNERS_VERSION')) {
 
 **Only free plugins should initialize this library**.
 
-Call `pp_install_banner()` somewhere in a custom admin page with all the appropriate params:
+Call `pp_display_banner()` somewhere in a custom admin page with all the appropriate params:
 
 ```php
 <?php
 $banners = new PP_WP_Banners();
-$banners->pp_install_banner(
+$banners->pp_display_banner(
   $heading,
   $title,
   $contents,
@@ -64,7 +64,7 @@ Using Capabilities plugin banner inviting to install Permissions as example, thi
 ```php
 <?php
 $banners = new PP_WP_Banners();
-$banners->pp_install_banner(
+$banners->pp_display_banner(
     __( 'Recommendations for you', 'capsman-enhanced' ),
     __( 'Control permissions for individual posts and pages', 'capsman-enhanced' ),
     array(
@@ -112,7 +112,7 @@ Don't forget to replace `CAPSMAN_PERMISSIONS_INSTALLED` with your own custom con
       <div class="pp-column-right">
           <?php
           $banners = new PP_WP_Banners();
-          $banners->pp_install_banner(
+          $banners->pp_display_banner(
               // Set the params for your banner
           );
           ?>
