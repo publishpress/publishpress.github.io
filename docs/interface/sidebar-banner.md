@@ -97,9 +97,9 @@ if (!cme_is_plugin_active('press-permit-core.php') && !cme_is_plugin_active('pre
 }
 ```
 
-The HTML structure when displaying a banner in a sidebar of a custom admin screen is as follows. Please note we use `CAPSMAN_PERMISSIONS_INSTALLED` constant to decide to output `pp-enable-sidebar` CSS class and the banner itself.
+The HTML structure when displaying a banner in a sidebar of a custom admin screen is as follows. Please note we use `CAPSMAN_PERMISSIONS_INSTALLED` constant to decide to output `pp-enable-sidebar` CSS class and the banner itself. Optionally also check if `PP_WP_Banners` class already loads.
 
-Optionally also check if `PP_WP_Banners` class already loads.
+Don't forget to replace `CAPSMAN_PERMISSIONS_INSTALLED` with your own custom constant.
 
 ```php
 <div class="pp-columns-wrapper<?php echo !CAPSMAN_PERMISSIONS_INSTALLED ? ' pp-enable-sidebar' : '' ?>">
