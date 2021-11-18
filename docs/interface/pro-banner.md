@@ -24,7 +24,7 @@ Repository.
 ## Installation
 
 ```
-$ composer update --no-dev
+$ composer require publishpress/wordpress-version-notices
 ```
 
 ## Integrating into a plugin
