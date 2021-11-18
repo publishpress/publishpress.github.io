@@ -111,7 +111,8 @@ Don't forget to replace `CAPSMAN_PERMISSIONS_INSTALLED` with your own custom con
   <?php if( !CAPSMAN_PERMISSIONS_INSTALLED && class_exists('PP_WP_Banners') ) { ?>
       <div class="pp-column-right">
           <?php
-          PP_WP_Banners::pp_install_banner(
+          $banners = new PP_WP_Banners();
+          $banners->pp_install_banner(
               // Set the params for your banner
           );
           ?>
