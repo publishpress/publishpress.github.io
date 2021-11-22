@@ -29,7 +29,7 @@ This library doesn't autoload, so is required to add this code in your plugin ma
 ```php
 <?php
 if (!defined('PP_WP_BANNERS_VERSION')) {
-    require_once __DIR__ . '/vendor/publishpress/wordpress-banners/BannersController.php';
+    require_once __DIR__ . '/vendor/publishpress/wordpress-banners/BannersMain.php';
 }
 ```
 
@@ -39,7 +39,7 @@ Call `pp_display_banner()` somewhere in a custom admin page with all the appropr
 
 ```php
 <?php
-$banners = new PublishPress\WordPressBanners\BannersController;
+$banners = new PublishPress\WordPressBanners\BannersMain;
 $banners->pp_display_banner(
   $heading,
   $title,
@@ -63,7 +63,7 @@ Using Capabilities plugin banner inviting to install Permissions as example, thi
 
 ```php
 <?php
-$banners = new PublishPress\WordPressBanners\BannersController;
+$banners = new PublishPress\WordPressBanners\BannersMain;
 $banners->pp_display_banner(
     __( 'Recommendations for you', 'capsman-enhanced' ),
     __( 'Control permissions for individual posts and pages', 'capsman-enhanced' ),
@@ -82,7 +82,7 @@ $banners->pp_display_banner(
 
 ## Display the banner in a two-columns layout
 
-The banner is designed to be outputted in the right sidebar of a custom admin screen. You can wrap the code to call `BannersController.php` inside an `if-else` validation and define the value of a new constant you'll use in next step to enable/disable a right-left columns layout.
+The banner is designed to be outputted in the right sidebar of a custom admin screen. You can wrap the code to call `BannersMain.php` inside an `if-else` validation and define the value of a new constant you'll use in next step to enable/disable a right-left columns layout.
 
 In the example below we check if Permissions Free and Pro are activated. Depending the result, we assign a boolean value to `CAPSMAN_PERMISSIONS_INSTALLED`, a custom constant:
 
@@ -92,14 +92,14 @@ if (!cme_is_plugin_active('press-permit-core.php') && !cme_is_plugin_active('pre
 	define('CAPSMAN_PERMISSIONS_INSTALLED', false);
 
 	if (!defined('PP_WP_BANNERS_VERSION')) {
-	    require_once __DIR__ . '/vendor/publishpress/wordpress-banners/BannersController.php';
+	    require_once __DIR__ . '/vendor/publishpress/wordpress-banners/BannersMain.php';
 	}
 } else {
 	define('CAPSMAN_PERMISSIONS_INSTALLED', true);
 }
 ```
 
-The HTML structure when displaying a banner in a sidebar of a custom admin screen is as follows. Please note we use `CAPSMAN_PERMISSIONS_INSTALLED` constant to decide to output `pp-enable-sidebar` CSS class and the banner itself. 
+The HTML structure when displaying a banner in a sidebar of a custom admin screen is as follows. Please note we use `CAPSMAN_PERMISSIONS_INSTALLED` constant to decide to output `pp-enable-sidebar` CSS class and the banner itself.
 
 Don't forget to replace `CAPSMAN_PERMISSIONS_INSTALLED` with your own custom constant.
 
@@ -111,7 +111,7 @@ Don't forget to replace `CAPSMAN_PERMISSIONS_INSTALLED` with your own custom con
   <?php if( !CAPSMAN_PERMISSIONS_INSTALLED ) { ?>
       <div class="pp-column-right">
           <?php
-          $banners = new PublishPress\WordPressBanners\BannersController;
+          $banners = new PublishPress\WordPressBanners\BannersMain;
           $banners->pp_display_banner(
               // Set the params for your banner
           );
