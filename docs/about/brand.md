@@ -43,12 +43,12 @@ The PublishPress brand colors are purple and yellow. Below we list the HEX and R
 ## PublishPress Logo
 
 <div class="logo-wrapper">
-    <img src="https://137842-399165-1-raikfcquaxqncofqfm.stackpathdns.com/wp-content/uploads/2018/08/publishpress-media.png" />
+    <img src="https://publishpress.com/wp-content/uploads/2018/08/publishpress-media.png" />
 </div>
 
 ## PublishPress Mascots
 
 <div class="logo-wrapper">
-    <img src="https://137842-399165-1-raikfcquaxqncofqfm.stackpathdns.com/wp-content/uploads/2019/09/1er-design-size-1280x800.png" />
+    <img src="https://publishpress.com/wp-content/uploads/2019/09/1er-design-size-1280x800.png" />
 </div>
 
