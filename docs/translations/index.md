@@ -28,7 +28,7 @@ By having Pro plugin installed, with the Free version deactivated, the language 
 
 ## Custom translations
 
-This case applies to end users who wants to create their own translations for a Pro plugin, in this case for PublishPress Checklists, using Loco Translate plugin.
+This case applies to end users who wants to create their own translations for a Pro plugin, in this case for PublishPress Checklists Pro, using Loco Translate plugin.
 
 1. Install PublishPress Checklist, the free version
 2. Don't activate the plugin
