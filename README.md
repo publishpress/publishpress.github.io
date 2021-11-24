@@ -19,6 +19,13 @@ More information on [GitHub Docs](https://docs.github.com/en/github/working-with
 * RubyGems
 * GCC and Make 
 
+## Preparing the environment
+
+```
+$ sudo apt install ruby-bundler ruby-dev ruby-zip libz-dev
+$ bundle install
+```
+
 ## How to test locally
 
 Run the following command to start the local server:
