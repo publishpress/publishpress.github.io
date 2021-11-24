@@ -24,7 +24,7 @@ The Free version of the plugin contains the translations under its own text doma
 Note: only include strings exclusive to Pro and misses the language translations from Free.
 <img width="323" alt="" src="https://user-images.githubusercontent.com/4999794/140989862-b91ff8a5-f30b-498e-9958-eaa7ac7ce0aa.png">
 
-By having Pro plugin installed, with the Free version deactivated, the strings from Free works in the Pro version.
+By having Pro plugin installed, with the Free version deactivated, the language strings from Free works in the Pro version.
 
 ## Custom translations
 
