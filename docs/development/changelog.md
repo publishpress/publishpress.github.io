@@ -23,7 +23,7 @@ Documentation based on [Keepchangelog](https://keepachangelog.com/).
 
 It is important to note that our plugins follow the [Semantic Versioning](https://semver.org/) specification.
 
-Please, check our [Version Number Documentation]({% link /docs/deployment/version-number.md %}).
+Please, check our [Version Number Documentation]({% link docs/deployment/version-number.md %}).
 
 ## How to make it easier to maintain a changelog
 
