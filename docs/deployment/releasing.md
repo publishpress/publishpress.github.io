@@ -66,7 +66,7 @@ Work on each step checking the boxes, then close the issue after finishing the p
 - [ ] Remove any eventual file that shouldn't be released in the package (if you find anything, make sure to create an issue to fix the build script)
 - [ ] Look for new files `$ svn status | grep \?` and add them using `$ svn add <each_file_path>`
 - [ ] Look for removed files `$ svn status | grep !` and remove them `$ svn rm <each_file_path>`
-- [ ] Create the new tag `$ svn cp trunk tags/<version>`
+- [ ] Create the new tag `$ svn cp trunk tags/<version>`. [Read more](https://developer.wordpress.org/plugins/wordpress-org/how-to-use-subversion/#create-tags-from-trunk).
 - [ ] Commit the changes `$ svn ci -m 'Releasing <version>'`
 - [ ] Wait until WordPress updates the version number and make the final test updating the plugin in a staging site
 ```
