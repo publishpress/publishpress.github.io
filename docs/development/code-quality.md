@@ -79,6 +79,15 @@ $ vendor/bin/phpcs --standard=VariableAnalysis ./src
 Don't run this command in the `vendor` folder. Maybe it makes sense to create a `.phpcs.xml.dist` file adding the 
 speciifc files that should be tested. 
 
+### Checking and exporting the results to CSV
+
+You can use the following command to check and export the results in a CSV format.
+Run the command from inside the project folder.
+
+```bash
+$ vendor/bin/phpcs --standard=WordPress-VIP-Go -sp --basepath=. --ignore=vendor ./ --report-file=report.csv --report=csv
+```
+
 ## Mess detector
 
 We use the [PHP Mess Detector](https://phpmd.org/) as a tool for helping to find potential problems withing the source like:
