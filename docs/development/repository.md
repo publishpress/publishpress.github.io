@@ -17,6 +17,78 @@ parent: Development
 
 ---
 
+## Main plugin file
+
+### File name
+
+By default, the name of the main file should be the plugin slug. If your plugin needs to use a different filename for
+backward compatibility, make sure to specify the correct filename in the `RoboFile.php` file, for the builder.
+
+Please, check the [builder docs]({% link docs/deployment/building.md %}).
+
+### File Header
+
+Please, make sure the file header matches the following standard:
+
+```php
+<?php
+/**
+ * Plugin Name: <plugin-name-human-readable>
+ * Plugin URI: https://publishpress.com/<plugin-slug>/
+ * Description: <plugin-description>
+ * Version: <plugin-version>
+ * Author: PublishPress
+ * Author URI: https://publishpress.com/
+ * Text Domain: <plugin-slug>
+ * Domain Path: /languages
+ * Min WP Version: <min-wp-version>
+ * Requires PHP: 5.6.20
+ * License: GPLv3
+ *
+ * Copyright (c) <current-year> PublishPress
+ *
+ * 
+ * @package 	<plugin-slug>
+ * @author		PublishPress
+ * @copyright   Copyright (c) <current-year> PublishPress
+ * @license		GNU General Public License version 3
+ * @link		https://publishpress.com/
+ */
+```
+
+If your plugin is a fork of another one, please make sure to mention the original credits and copyright as below:
+
+```php
+<?php
+/**
+ * Plugin Name: <plugin-name-human-readable>
+ * Plugin URI: https://publishpress.com/<plugin-slug>/
+ * Description: <plugin-description>
+ * Version: <plugin-version>
+ * Author: PublishPress
+ * Author URI: https://publishpress.com/
+ * Text Domain: <plugin-slug>
+ * Domain Path: /languages
+ * Min WP Version: <min-wp-version>
+ * Requires PHP: 5.6.20
+ * License: GPLv3
+ *
+ * Copyright (c) <current-year> PublishPress
+ *
+ * ------------------------------------------------------------------------------
+ * Based on <the-original-plugin-name>
+ * Author: <the-original-author>
+ * Copyright (c) <initial-copyright-year>-<final-copyright-year> <original-author-name>
+ * ------------------------------------------------------------------------------
+ * 
+ * @package 	<plugin-slug>
+ * @author		PublishPress
+ * @copyright   Copyright (c) <initial-copyright-year>-<final-copyright-year> <original-author-name>, modifications Copyright (c) <current-year> PublishPress
+ * @license		GNU General Public License version 3
+ * @link		https://publishpress.com/
+ */
+```
+
 ## Default directory structure
 
 ### README.md 

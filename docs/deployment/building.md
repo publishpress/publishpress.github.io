@@ -92,6 +92,28 @@ class RoboFile extends \PublishPressBuilder\PackageBuilderTasks
 }
 ```
 
+### Plugins with a custom file name
+
+If the main file of the plugin is not equals to the plugin slug then you need to make sure you set the correct filename
+in the builder script, replacing `theCustomFileName` in the following snippet:
+
+```php
+class RoboFile extends \PublishPressBuilder\PackageBuilderTasks
+{
+    public function __construct()
+    {
+        $this->setPluginFileName('theCustomFileName.php');
+        
+        parent::__construct();
+    }
+}
+```
+
+### Version
+
+Make sure to always use the `version` command to set the version in the plugin before building it. Do not change the version manually. 
+Please [read the docs]({% link docs/deployment/version-number.md %}) for the command.
+
 ### Destination directory
 
 The builder will create a `./dist` folder inside the project's root dir and use it as a temporary folder for the files and final .zip file. 

@@ -82,7 +82,7 @@ If the version is an unstable version number, then the readme.txt file won't be 
 
 By default, our [repo structure]({% link docs/development/repository.md %}) expects that you have a `defines.php` file
 with a constant for the version. The constant's name should unique for each project, so you can specify for the builder
-what is the expected name customizing your `RoboFile.php` file:
+what is the expected name customizing your `RoboFile.php` file (before the `parent::__construct();` call):
 
 ```php
 <?php
@@ -96,9 +96,26 @@ class RoboFile extends \PublishPressBuilder\PackageBuilderTasks
 {
     public function __construct()
     {
-        parent::__construct();
-
         $this->setVersionConstantName('PUBLISHPRESS_DUMMY_VERSION');
+        
+        parent::__construct();
     }
 }
 ```  
+
+In case the constant for the version number is defined in the main plugin file, it will be recognized there. But if your
+plugin uses a custom name for the plugin file (different from the plugin slug), then you need to make sure you add that
+to the script, replacing `theCustomFileName` (before the `parent::__construct();` call):
+
+```php
+class RoboFile extends \PublishPressBuilder\PackageBuilderTasks
+{
+    public function __construct()
+    {
+        $this->setVersionConstantName('PUBLISHPRESS_DUMMY_VERSION');
+        $this->setPluginFileName('theCustomFileName.php');
+        
+        parent::__construct();
+    }
+}
+```
