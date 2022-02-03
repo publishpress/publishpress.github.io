@@ -153,6 +153,5 @@ vendor/bin/codecept run acceptance folders/of/the/file/filename.php
 And for running only one specific test, use this:
 
 ```bash
-```bash
 vendor/bin/codecept run acceptance folders/of/the/file/filename.php:theTestFunctionName
 ```
