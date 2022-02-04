@@ -59,7 +59,7 @@ Add this to the `composer.json` file:
 
 ## Configuring
 
-The configuration is done creating a file named `.end.testing` in the project root folder. If the repository provies a dist
+The configuration is done creating a file named `.env.testing` in the project root folder. If the repository provies a dist
 file for it, as `.env.testing.dist`, copy it and edit.
 
 The file should have at least the following settings:
