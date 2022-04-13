@@ -56,17 +56,18 @@ Work on each step checking the boxes, then close the issue after finishing the p
 
 ### Release Checklist
 
-- [ ] Create a Pull Request and merge the release branch it into the `master/main` branch
-- [ ] Merge the `master/main` branch into the `development` branch
-- [ ] Create the Github release (make sure it is based on the `master/main` branch and correct tag)
+- [ ] Create a Pull Request and merge the release branch it into the `master` branch
+- [ ] Merge the `master` branch into the `development` branch
+- [ ] Create the Github release (make sure it is based on the `master` branch and correct tag)
 
-#### SVN Repo
+#### SVN Repo\
+- [ ] Update your working copy using `$ svn update`
 - [ ] Cleanup the `trunk` directory.
 - [ ] Unzip the built package and move files to the `trunk`
 - [ ] Remove any eventual file that shouldn't be released in the package (if you find anything, make sure to create an issue to fix the build script)
 - [ ] Look for new files `$ svn status | grep \?` and add them using `$ svn add <each_file_path>`
 - [ ] Look for removed files `$ svn status | grep !` and remove them `$ svn rm <each_file_path>`
-- [ ] Create the new tag `$ svn cp trunk tags/<version>`. [Read more](https://developer.wordpress.org/plugins/wordpress-org/how-to-use-subversion/#create-tags-from-trunk).
+- [ ] Create the new tag `$ svn cp trunk tags/<version>`
 - [ ] Commit the changes `$ svn ci -m 'Releasing <version>'`
 - [ ] Wait until WordPress updates the version number and make the final test updating the plugin in a staging site
 ```
@@ -88,9 +89,9 @@ Work on each step checking the boxes, then close the issue after finishing the p
 
 ### Release Checklist
 
-- [ ] Create a Pull Request and merge the release branch it into the `master/main` branch
-- [ ] Merge the `master/main` branch into the `development` branch
-- [ ] Create the Github release (make sure it is based on the `master/main` branch and correct tag)
+- [ ] Create a Pull Request and merge the release branch it into the `master` branch
+- [ ] Merge the `master` branch into the `development` branch
+- [ ] Create the Github release (make sure it is based on the `master` branch and correct tag)
 - [ ] Update EDD registry and upload the new package
 - [ ] Make the final test updating the plugin in a staging site
 ```
