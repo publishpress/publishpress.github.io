@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Releasing 
+title: Releasing
 permalink: /docs/deployment/releasing
 nav_order: 3
 parent: Deployment
@@ -32,13 +32,13 @@ A good practice is to add a GitHub issue template on every Free plugin repositor
 
 ### GitHub Issue Template for the checklists
 
-Save the following files in the repository's `.github` subfolder: 
+Save the following files in the repository's `.github` subfolder:
 
 * [Free plugin's checklist template file](../../examples/release-free-plugin.md.dist) at `.github/ISSUE_TEMPLATE/release-free-plugin.md`.
 * [Pro plugin's checklist template file](../../examples/release-pro-plugin.md.dist) at `.github/ISSUE_TEMPLATE/release-pro-plugin.md`.
 
 On every release, go to the GitHub issues page for the respective repository and create a new issue selecting one of templates above.
-Work on each step checking the boxes, then close the issue after finishing the process and 
+Work on each step checking the boxes, then close the issue after finishing the process and
 
 ### Base Checklist for Free plugins
 
@@ -60,7 +60,8 @@ Work on each step checking the boxes, then close the issue after finishing the p
 - [ ] Merge the `master` branch into the `development` branch
 - [ ] Create the Github release (make sure it is based on the `master` branch and correct tag)
 
-#### SVN Repo\
+#### SVN Repo
+
 - [ ] Update your working copy using `$ svn update`
 - [ ] Cleanup the `trunk` directory.
 - [ ] Unzip the built package and move files to the `trunk`
