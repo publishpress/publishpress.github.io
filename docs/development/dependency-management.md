@@ -27,4 +27,4 @@ See the documentation for adding support to "composer/installers": [Preparing fo
 
 ## Dependencies on JavaScript
 
-For the JS dependencies, usually for development tools onl, we use [npm](https://www.npmjs.com/).
+For the JS dependencies we use [npm](https://www.npmjs.com/).
