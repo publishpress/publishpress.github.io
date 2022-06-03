@@ -143,6 +143,18 @@ How archives are created?
 
 This file is extremely important to reduce the size of archive files and to avoid that test files, scripts or other files that should not be added to production are released into final packages or inside the **composer's vendor** directories.
 
+Here is an example of the "WordPress Reviews" library v1.1.18 imported by composer without using the `.gitattributes` file:
+
+![Library without using gitattributes](/assets/img/library-without-gitattributes.png "Library without using gitattributes")
+
+Note that files like `.gitignore`, `phpcs.xml.dist`, and others files that are intendended for development only, are included into the production packages.
+
+Now, take a look when we require that library from v1.1.19, introducing the `.gitattributes` file:
+
+![Library using gitattributes](/assets/img/library-with-gitattributes.png "Library using gitattributes")
+
+Note that we don't have those files anymore.
+
 [Documentation of gitattributes file](https://git-scm.com/docs/gitattributes)
 
 [Click here for an example](https://github.com/publishpress/publishpress.github.io/blob/master/examples/.gitattributes)
