@@ -14,6 +14,7 @@
 *.cache export-ignore
 *.code-workspace export-ignore
 *.dist export-ignore
+*.dist.yml export-ignore
 *.exe export-ignore
 *.sh export-ignore
 *.sql export-ignore
