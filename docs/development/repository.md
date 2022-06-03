@@ -141,7 +141,7 @@ How archives are created?
 * By clicking on Github's Releases > Assets > Souce code.
 * By requiring the package using composer, if correctly [configured for using "preferred-install": "dist"]({% link docs/development/preparing-composer.md %}).
 
-This file is extremely important to reduce the size of archive files and to avoid that test files, scripts or other files that should not be added to production are released into final packages or inside the **composer's vendor** directories.
+This file is extremely important to reduce the size of archive files and to avoid that test files, scripts or other files that should not be added to production are released into final packages or inside the **composer's vendor** directory.
 
 Here is an example of the "WordPress Reviews" library v1.1.18 imported by composer without using the `.gitattributes` file:
 
