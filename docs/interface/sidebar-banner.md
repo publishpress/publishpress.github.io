@@ -46,7 +46,8 @@ $banners->pp_display_banner(
   $contents,
   $link,
   $link_title,
-  $image
+  $image,
+  $link_class
 );
 ```
 
@@ -58,6 +59,7 @@ $banners->pp_display_banner(
 * `$link`: Link to apply to button and image
 * `$link_title`: Link title
 * `$image`: A filename from assets/images/ folder; disabled if blank
+* `$link_class`: Link class. e.g. 'button button-secondary'. Default is 'button pp-button-yellow'.
 
 Using Capabilities plugin banner inviting to install Permissions as example, this will be the result:
 
