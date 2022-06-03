@@ -155,9 +155,13 @@ Now, take a look when we require that library from v1.1.19, introducing the `.gi
 
 Note that we don't have those files anymore.
 
+One important detail is that this file seems to be used by composer only when the package is downloaded from [packagist.org](https://packagist.org). If specifying a package for coming directly from the repository, files won't be filtered.
+
 [Documentation of gitattributes file](https://git-scm.com/docs/gitattributes)
 
 [Click here for an example](https://github.com/publishpress/publishpress.github.io/blob/master/examples/.gitattributes)
+
+
 
 ### .distignore
 
