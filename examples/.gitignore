@@ -24,3 +24,6 @@ codeception.yml
 wpcom-helper.php
 local.sh
 .properties.ini
+
+.vscode
+*.code-workspace

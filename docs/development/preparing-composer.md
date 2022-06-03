@@ -29,7 +29,7 @@ compatible with both installation as standalone plugin or as a dependency of the
 
 #### Minimum required properties
 
-All the following properties are required in the `composer.json` file:  
+All the following properties are required in the `composer.json` file:
 
 ```json
 {
@@ -44,6 +44,9 @@ All the following properties are required in the `composer.json` file:
       "email": "help@publishpress.com"
     }
   ],
+  "config": {
+    "preferred-install": "dist"
+  },
   "autoload": {
     "files": [
       "defines-free-plugin-path.php"
@@ -102,7 +105,7 @@ if (!defined('PUBLISHPRESS_FREE_PLUGIN_PATH')) {
     define('PUBLISHPRESS_FREE_PLUGIN_PATH', __DIR__);
 }
 
-``` 
+```
 
 And the `autoload` property should be defined as:
 
@@ -116,9 +119,15 @@ And the `autoload` property should be defined as:
 }
 ```
 
+#### Property: preffered-install = dist
+
+This property tells composer to download requirement using dist files. This is important to make sure that files like tests, development env config files, and others are not downloaded into the vendor folder.
+
+Files listed as `export-ignore` on the `.gitattributes` files found into the GitHub repositories won't be added to the vendor folder, consequently, to the final built packages. [Read more about .gitattributes file]({% link docs/development/repository.md %}).
+
 #### Assets loading
 
-Please, see the instructions here: [Free plugin in the Pro plugin]({% link docs/free-pro/index.md %}) 
+Please, see the instructions here: [Free plugin in the Pro plugin]({% link docs/free-pro/index.md %})
 
 ### Example of the client configuration
 
@@ -140,7 +149,8 @@ An example of `composer.json` file that uses WPStarter and define the Free plugi
     "wpackagist-plugin/publishpress": "*"
   },
   "config": {
-    "vendor-dir": "wp-content/vendor"
+    "vendor-dir": "wp-content/vendor",
+    "preferred-install": "dist"
   },
   "scripts": {
     "post-install-cmd": "WCM\\WPStarter\\Setup::run",
@@ -181,6 +191,9 @@ Here is a basic `composer.json` file for the Pro plugin:
     "php": ">=5.6.20",
     "publishpress/publishpress": "*",
     "composer/installers": "~1.0"
+  },
+  "config": {
+    "preferred-install": "dist"
   }
 }
 ```
@@ -224,7 +237,7 @@ Pro plugins require at least two dependencies:
 ```
 
 The Free plugin (as a library - see [Free plugin in the Pro plugin]({% link docs/free-pro/index.md %})) and the Installers, that pack scripts to handle the
-plugin installation on sites using Composer. 
+plugin installation on sites using Composer.
 
 ### Example of the client configuration
 
@@ -268,9 +281,9 @@ An example of `composer.json` file that uses WPStarter and define the Pro plugin
 ```
 #### wp-config.php
 
-The client need to define the following constants so the Free plugin is able to get 
-assets from the correct path and URL. This is required because they can set custom 
-paths for the vendor dir, and we can't find out automatically for now. 
+The client need to define the following constants so the Free plugin is able to get
+assets from the correct path and URL. This is required because they can set custom
+paths for the vendor dir, and we can't find out automatically for now.
 
 ```php
 define('PUBLISHPRESS_CUSTOM_VENDOR_URL', 'https://dev.local/wp-content/vendor/');
